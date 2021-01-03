@@ -1907,7 +1907,7 @@ img.hover-zoom:hover {
   position: relative;
 }
 
-.highlight-box .entry-name h5 {
+.highlight-box h5.entry-name {
   font-size: 1.5rem;
 }
 
