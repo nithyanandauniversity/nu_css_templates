@@ -307,7 +307,7 @@ summary {
 
 @font-face {
   font-family: KAILASA-Sans-Serif;
-  src: url(https://github.com/nithyanandauniversity/fontrepo/blob/master/KAILASASansSerif/KAILASA-Sans-Serif.ttf?raw=true);
+  src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/KAILASASansSerif/KAILASA-Sans-Serif.ttf);
 }
 
 body {
