@@ -1906,3 +1906,15 @@ img.hover-zoom:hover {
   margin-bottom: 10px;
   position: relative;
 }
+
+.highlight-box .entry-name h5 {
+  font-size: 1.5rem;
+}
+
+.highlight-box .entry-name a {
+  color: #5e2121;
+}
+
+.highlight-box:hover .entry-name a {
+  background-color: #d1af8330;
+}
