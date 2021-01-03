@@ -1911,10 +1911,10 @@ img.hover-zoom:hover {
   font-size: 1.5rem;
 }
 
-.highlight-box .entry-name a {
+.highlight-box h5.entry-name > a {
   color: #5e2121;
 }
 
-.highlight-box:hover .entry-name a {
+.highlight-box:hover h5.entry-name > a {
   background-color: #d1af8330;
 }
