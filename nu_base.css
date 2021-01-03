@@ -1809,17 +1809,17 @@ section.section-sm {
   padding-bottom: 30px;
 }
 
-.blockquote {
+blockquote {
   border-left: 4px solid #d1af8350;
   margin: 0 1.5rem;
 }
 
-.blockquote p {
+blockquote p {
   position: relative;
   padding: 1.5rem;
 }
 
-.blockquote p::before {
+blockquote p::before {
   content: "\201D" !important;
   font-family: sans-serif;
   font-size: 120px;
