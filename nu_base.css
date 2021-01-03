@@ -382,6 +382,7 @@ p a:hover {
   flex-wrap: wrap;
   width: 80%;
   margin: auto;
+  row-gap: 2rem;
 }
 
 .row.reverse {
