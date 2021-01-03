@@ -307,11 +307,21 @@ summary {
 
 @font-face {
   font-family: Poppins-Devanagari;
-  src: url(https://github.com/nithyanandauniversity/fontrepo/blob/master/PoppinsDevanagari/Poppins-Devanagari.ttf?raw=true);
+  src: url(https://nithyanandauniversity.github.io/fontrepo/PoppinsDevanagari/Poppins-Devanagari.ttf);
+}
+
+@font-face {
+  font-family: Mart-Devanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/Mart%20Devanagari/Mart-Devanagari.ttf);
+}
+
+@font-face {
+  font-family: SourceSansPro-Devanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/SourceSansProDevanagari/SourceSansPro-Devanagari.ttf);
 }
 
 body {
-  font-family: Poppins-Devanagari;
+  font-family: SourceSansPro-Devanagari;
 }
 
 h1,
