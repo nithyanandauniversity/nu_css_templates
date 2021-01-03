@@ -1819,7 +1819,7 @@ blockquote p {
   padding: 1.5rem;
 }
 
-blockquote p::before {
+blockquote::before {
   content: "\201D" !important;
   font-family: sans-serif;
   font-size: 120px;
