@@ -1921,3 +1921,10 @@ img.hover-zoom:hover {
 .highlight-box:hover h5.entry-name > a {
   color: #d1af83;
 }
+
+.lead {
+  font-size: 1.5rem;
+  color: #5e2121;
+  line-height: 1.3em;
+  margin-bottom: 0.3em;
+}
