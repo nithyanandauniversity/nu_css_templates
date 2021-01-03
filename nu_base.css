@@ -1306,18 +1306,21 @@ p a:hover {
   background: #ffffff;
   margin: 0 5%;
   width: 100%;
+  transform: translateY(30%);
+  padding-bottom: 1rem;
 }
 
 .nu_page_subtitle {
   padding: 10px;
-  margin-top: -50px;
+  transform: translateY(-50%);
   width: fit-content;
+  background: #5e2121;
 }
 
 .nu_page_title_row {
   width: 88.88%;
   margin: 0 auto;
-  padding: 1.875rem 15px 0 15px;
+  padding: 0 15px;
 }
 
 .nav_children {
@@ -1530,12 +1533,8 @@ p a:hover {
   transition: 0.5s;
 }
 
-.nu_page_subtitle {
-  background: #5e2121;
-}
-
-.nu_page_title h1 {
-  margin: 0;
+.nu_page_title {
+  margin-top: -20px;
 }
 
 .nu_page_subtitle h2 {
@@ -1551,6 +1550,7 @@ p a:hover {
   text-transform: uppercase;
   line-height: 1.2em;
   /*font-family: Samarkan;*/
+  margin: 0;
 }
 
 .menu_nav {
