@@ -1835,6 +1835,7 @@ section.section-sm {
   width: 80%;
   margin: 0 auto;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   color: #d1af83;
