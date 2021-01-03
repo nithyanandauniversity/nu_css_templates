@@ -355,6 +355,10 @@ p a:hover {
   background-color: #d1af8330;
 }
 
+img {
+  width: 100%;
+}
+
 .container-fluid,
 .container {
   margin-right: auto;
@@ -1686,6 +1690,7 @@ p a:hover {
   color: #ffffff;
   transition: 0.3s ease;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .col_a:after {
