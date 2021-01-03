@@ -306,12 +306,12 @@ summary {
 }
 
 @font-face {
-  font-family: KAILASA-Sans-Serif;
-  src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/KAILASASansSerif/KAILASA-Sans-Serif.ttf);
+  font-family: Poppins-Devanagari;
+  src: url(https://github.com/nithyanandauniversity/fontrepo/blob/master/PoppinsDevanagari/Poppins-Devanagari.ttf?raw=true);
 }
 
 body {
-  font-family: KAILASA-Sans-Serif;
+  font-family: Poppins-Devanagari;
 }
 
 h1,
