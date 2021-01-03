@@ -1871,6 +1871,7 @@ section.section-sm {
   border: 1px solid #f1f1f1;
   position: relative;
   margin-bottom: 30px;
+  height: 100%;
 }
 
 .highlight-box .img-top {
