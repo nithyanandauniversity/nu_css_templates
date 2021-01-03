@@ -317,6 +317,31 @@ h5,
 h6 {
   color: #5e2121;
   margin-bottom: 0.3em;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+h6 {
+  font-size: 0.5rem;
 }
 
 a {
@@ -1838,4 +1863,46 @@ section.section-sm {
   justify-content: space-between;
   align-items: center;
   color: #d1af83;
+}
+
+.highlight-box {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  background-color: #f1eded;
+  border: 1px solid #f1f1f1;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.highlight-box .img-top {
+  padding: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.highlight-box .img-top img {
+  width: 100%;
+}
+
+img.hover-zoom {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  transform: scale(1);
+  transition: 0.35s ease;
+}
+
+img.hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+.highlight-box > .box-text {
+  padding: 20px 20px 10px;
+  margin-bottom: 10px;
+  position: relative;
 }
