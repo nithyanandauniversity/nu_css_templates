@@ -1851,3 +1851,22 @@ section.section-sm {
     order: 1;
   }
 }
+
+@font-face {
+ font-family: Samarkan;
+ src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/Samarkan/Samarkan.ttf);
+}
+
+@font-face {
+ font-family: NotoDevanagari;
+ src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/NotoDevanagari/NotoDevanagari.ttf);
+}
+
+@font-face {
+ font-family: AnandaNamaste;
+ src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/AnandaNamaste/Ananda-Namaste.ttf);
+}
+
+body { 
+  font-family: NotoDevanagari;
+}
