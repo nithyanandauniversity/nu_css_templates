@@ -13,6 +13,8 @@ Use a better box model (opinionated).
 *::before,
 *::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /**
@@ -32,6 +34,7 @@ Use a more readable tab size (opinionated).
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 16px;
 }
 
 /*
@@ -45,6 +48,7 @@ Remove the margin in all browsers.
 
 body {
   margin: 0;
+  color: #3f3333;
 }
 
 /**
@@ -286,6 +290,46 @@ summary {
   display: list-item;
 }
 
+@font-face {
+  font-family: Samarkan;
+  src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/Samarkan/Samarkan.ttf);
+}
+
+@font-face {
+  font-family: NotoDevanagari;
+  src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/NotoDevanagari/NotoDevanagari.ttf);
+}
+
+@font-face {
+  font-family: AnandaNamaste;
+  src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/AnandaNamaste/Ananda-Namaste.ttf);
+}
+
+body {
+  font-family: NotoDevanagari;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #5e2121;
+  margin-bottom: 0.3em;
+}
+
+a {
+  color: #b69d7e;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+p a:hover {
+  color: #d1af83;
+  background-color: #d1af8330;
+}
+
 .container-fluid,
 .container {
   margin-right: auto;
@@ -311,8 +355,8 @@ summary {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  width: 80%;
+  margin: auto;
 }
 
 .row.reverse {
@@ -817,9 +861,9 @@ summary {
   .col-md-offset-11,
   .col-md-offset-12 {
     box-sizing: border-box;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -1247,28 +1291,20 @@ summary {
   }
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
 .nu_hero_banner {
   background-size: cover;
   background-position: center;
-  height: 25rem;
+  height: 50vh;
   display: flex;
   align-items: flex-end;
+  background-image: url("./Standards_files/Anandotsava-small-centered.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .nu_page_title_container {
   background: #ffffff;
-  padding: 1.875rem 1.875rem 0 1.875rem;
-  margin: 0 1.875rem;
+  margin: 0 5%;
   width: 100%;
 }
 
@@ -1276,10 +1312,12 @@ html {
   padding: 10px;
   margin-top: -50px;
   width: fit-content;
-  margin-bottom: 6px;
 }
 
-.nu_page_title {
+.nu_page_title_row {
+  width: 88.88%;
+  margin: 0 auto;
+  padding: 1.875rem 15px 0 15px;
 }
 
 .nav_children {
@@ -1294,20 +1332,22 @@ html {
   list-style: none;
   position: relative;
   display: flex;
+  flex-flow: row wrap;
   padding: 0;
   align-items: center;
   list-style-type: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1rem;
+  justify-content: flex-start;
 }
 
-.nav_children_ul > li {
+.nav_children_ul > li:not(:first-child) {
   padding: 0 0.5rem;
 }
 
-.nav_child_icon {
-  /* no need  */
+.nav_children_ul > li:first-child {
+  padding-right: 0.5rem;
 }
 
 @media all and (max-width: 500px) {
@@ -1316,9 +1356,16 @@ html {
   }
   .nu_page_title_container {
     margin: 0;
+    width: 100%;
+  }
+  .nu_page_title_row {
+    width: 85%;
   }
   .nu_hero_banner {
-    height: 18.75rem;
+    height: 35vh;
+  }
+  .row {
+    width: 85%;
   }
 }
 
@@ -1334,6 +1381,7 @@ html {
   margin-right: auto;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .menu_group_ul {
@@ -1341,33 +1389,6 @@ html {
   margin: 0;
   list-style: none;
   padding: 0;
-}
-
-.menu_logo_li {
-  display: flex;
-}
-
-.menu_logo_div {
-  position: relative;
-  margin-left: 1.5rem;
-  display: flex;
-  padding: 0;
-  align-items: center;
-}
-
-.menu_logo_img {
-  /* empty */
-}
-
-.menu_logo_a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu_logo_h {
-  padding-left: 0.25rem;
-  margin: auto 0 auto 0;
 }
 
 .menu_link_li {
@@ -1381,10 +1402,6 @@ html {
   padding: 1.5rem;
 }
 
-.menu_toggle_li {
-  /* toggle do later */
-}
-
 .menu_toggle_checkbox {
   display: none;
 }
@@ -1395,10 +1412,6 @@ html {
 
 .menu_toggle_checkbox:not(checked) ~ .menu_toggle_div {
   display: block;
-}
-
-.menu_toggle_label {
-  /* toggle do later */
 }
 
 .menu_toggle_label:after {
@@ -1458,30 +1471,11 @@ html {
   margin-left: 0.3rem;
 }
 
-.menu_hover_div {
-  /*made common*/
-}
-
-.menu_hover_divdiv {
-  /*made common*/
-}
-
-/* ------------- */
-
 .col_ul {
   list-style: none;
   flex: 1 1 20%;
   min-width: 250px;
   padding: 0 20px 20px 20px;
-}
-
-.col_li {
-}
-
-.col_h {
-}
-
-.col_a {
 }
 
 .nu_main {
@@ -1491,17 +1485,14 @@ html {
 
 .nu_footer {
   display: block;
-  padding: 15px 30px 0 30px;
   position: relative;
   z-index: 10;
-  text-align: center;
+  background: #400404;
+  padding: 15px 0;
 }
 
 .container {
   width: 100%;
-}
-
-.lead {
 }
 
 .responsive_iframe_container,
@@ -1513,8 +1504,8 @@ html {
   /* 16:9 Aspect Ratio */
 }
 
-.responsive-iframe,
-.iframe-thumbnail img {
+.responsive_iframe,
+.iframe_thumbnail img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1529,45 +1520,36 @@ html {
   object-position: center;
 }
 
-* {
-}
-
-html {
-}
-
 .nu_body {
   box-sizing: border-box;
   margin: 0;
   line-height: 1.42857;
-  color: #333;
   background-color: #fff;
   height: 100%;
   width: 100%;
-  font-size: 18px;
   transition: 0.5s;
-}
-
-.nu_hero_banner {
-  /*injected from code*/
-}
-
-.nu_page_title_container {
 }
 
 .nu_page_subtitle {
   background: #5e2121;
 }
 
+.nu_page_title h1 {
+  margin: 0;
+}
+
 .nu_page_subtitle h2 {
   font-size: 1rem;
   color: #ffffff;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .nu_page_title h1 {
   color: #5e2121;
   font-size: 3.5rem;
   text-transform: uppercase;
+  line-height: 1.2em;
   /*font-family: Samarkan;*/
 }
 
@@ -1578,38 +1560,25 @@ html {
   /*570F0C;*/
 }
 
-.menu_navdiv {
-}
-
-.menu_group_ul {
-}
-
-.menu_logo_li {
-}
-
 .menu_logo_div {
   color: #f2ce9f;
   display: flex;
-}
-
-.menu_logo_img {
-  max-height: 2.5rem;
-  /*margin-top : auto; margin-bottom : auto;*/
+  align-items: center;
+  justify-content: center;
+  margin: auto 1.5rem;
 }
 
 .menu_logo_a {
-  /*display:flex;align-items: center;justify-content: center;*/
-}
-
-.menu_logo_h {
-  font-family: Samarkan;
   font-weight: normal;
   font-size: 2.25rem;
-  /*1.5*/
+  color: #f2ce9f;
+  margin: 0px;
+  padding-left: 0.5rem;
 }
 
-.menu_link_li {
-  /* empty */
+.menu_logo_img {
+  max-width: 35px;
+  /*margin-top : auto; margin-bottom : auto;*/
 }
 
 .menu_link_a {
@@ -1622,12 +1591,6 @@ html {
   color: #d1af83;
   cursor: pointer;
   transition: 0.8s;
-}
-
-.menu_toggle_li {
-}
-
-.menu_toggle_checkbox {
 }
 
 .menu_toggle_label {
@@ -1670,14 +1633,6 @@ html {
   transition: 0.8s;
 }
 
-.menu_hover_div {
-  /*made common*/
-}
-
-.menu_hover_divdiv {
-  /*made common*/
-}
-
 .col_ul {
   border-bottom: 1px solid #d1af8320;
   margin-bottom: -1px;
@@ -1703,7 +1658,7 @@ html {
 .col_a {
   position: relative;
   color: #ffffff;
-  tranistion: 0.3s ease;
+  transition: 0.3s ease;
   text-decoration: none;
 }
 
@@ -1730,24 +1685,21 @@ html {
   color: #5e2121;
 }
 
+.nav_children_ul a:hover {
+  background: #d1af8330;
+}
+
 .nav_children_ul > li:not(:last-child) {
   border-right: 1px solid #d1af8380;
 }
 
 .nu_main {
-  color: #333;
-  background-color: #fff;
-  font-size: 18px;
   transition: 0.5s;
 }
 
-.section,
-section {
+.section {
   padding-top: 60px;
   padding-bottom: 60px;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-color: #e0e0e0;
 }
 
 .section.section-sm,
@@ -1817,17 +1769,8 @@ section.section-sm {
   padding-right: 15px;
 }
 
-.nu_footer {
-  font-size: 1.125rem;
-  background-color: #222;
-  border-color: #000;
-  color: #a0a0a0;
-}
-
 .bg-lightgray {
   background-color: #f5f5f5;
-  color: #333;
-  border-color: #e8e8e8;
 }
 
 .bg-darkgray {
@@ -1841,21 +1784,57 @@ section.section-sm {
   padding-bottom: 30px;
 }
 
-@font-face {
-  font-family: Samarkan;
-  src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/Samarkan/Samarkan.ttf);
+.blockquote {
+  border-left: 4px solid #d1af8350;
+  margin: 0 1.5rem;
 }
 
-@font-face {
-  font-family: NotoDevanagari;
-  src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/NotoDevanagari/NotoDevanagari.ttf);
+.blockquote p {
+  position: relative;
+  padding: 1.5rem;
 }
 
-@font-face {
-  font-family: AnandaNamaste;
-  src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/AnandaNamaste/Ananda-Namaste.ttf);
+.blockquote p::before {
+  content: "\201D" !important;
+  font-family: sans-serif;
+  font-size: 120px;
+  color: rgba(51, 51, 51, 0.25);
+  float: right;
+  top: -30px;
+  right: -7.5px;
+  position: absolute;
+  opacity: 0.5;
 }
 
-body {
-  font-family: NotoDevanagari;
+.responsive_iframe_container,
+.iframe_thumbnail {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive_iframe_container iframe,
+.iframe_thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe_thumbnail img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer_content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #d1af83;
 }
