@@ -305,8 +305,13 @@ summary {
   src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/AnandaNamaste/Ananda-Namaste.ttf);
 }
 
+@font-face {
+  font-family: KAILASA-Sans-Serif;
+  src: url(https://github.com/nithyanandauniversity/fontrepo/blob/master/KAILASASansSerif/KAILASA-Sans-Serif.ttf?raw=true);
+}
+
 body {
-  font-family: NotoDevanagari;
+  font-family: KAILASA-Sans-Serif;
 }
 
 h1,
