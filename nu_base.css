@@ -1697,7 +1697,8 @@ p a:hover {
   transition: 0.5s;
 }
 
-.section {
+.section,
+section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
