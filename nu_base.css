@@ -336,6 +336,11 @@ summary {
 }
 
 @font-face {
+  font-family: Ubuntu-Devanagari-Light;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/UbuntuDevanagari/Ubuntu-Devanagari-Light.ttf);
+}
+
+@font-face {
   font-family: Ubuntu-Devanagari-Caps;
   src: url(https://nithyanandauniversity.github.io/fontrepo/UbuntuDevanagari/Ubuntu-Devanagari-Caps.ttf);
 }
