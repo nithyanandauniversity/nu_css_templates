@@ -374,7 +374,6 @@ h6 {
   margin-bottom: 0.3em;
   line-height: 1.3em;
   font-family: Ubuntu-Devanagari;
-  font-weight: 400;
 }
 
 h1 {
@@ -410,6 +409,8 @@ a {
 p {
   font-size: 1rem;
   text-align: justify;
+  margin-bottom: 1em;
+  line-height: 1.7em;
 }
 
 p a:hover {
