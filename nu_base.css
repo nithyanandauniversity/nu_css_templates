@@ -291,21 +291,6 @@ summary {
 }
 
 @font-face {
-  font-family: Samarkan;
-  src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/Samarkan/Samarkan.ttf);
-}
-
-@font-face {
-  font-family: NotoDevanagari;
-  src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/NotoDevanagari/NotoDevanagari.ttf);
-}
-
-@font-face {
-  font-family: AnandaNamaste;
-  src: url(https://cdn.jsdelivr.net/gh/nithyanandauniversity/fontrepo/AnandaNamaste/Ananda-Namaste.ttf);
-}
-
-@font-face {
   font-family: Poppins-Devanagari;
   src: url(https://nithyanandauniversity.github.io/fontrepo/PoppinsDevanagari/Poppins-Devanagari.ttf);
 }
@@ -386,7 +371,7 @@ summary {
 }
 
 body {
-  font-family: Raleway-Devanagari;
+  font-family: Questrial-Devanagari;
 }
 
 h1,
