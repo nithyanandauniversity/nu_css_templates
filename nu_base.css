@@ -350,8 +350,13 @@ summary {
   src: url(https://nithyanandauniversity.github.io/fontrepo/MerriweatherDevanagari/Merriweather-Devanagari-Caps.ttf);
 }
 
+@font-face {
+  font-family: WorkSans-Devanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/WorkSansDevanagari/WorkSans-Devanagari.ttf);
+}
+
 body {
-  font-family: Nunito-Devanagari;
+  font-family: WorkSans-Devanagari;
 }
 
 h1,
