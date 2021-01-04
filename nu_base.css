@@ -367,7 +367,7 @@ summary {
 
 @font-face {
   font-family: MavenPro-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/MavenProDevanagari/MavenPro-Devanagari.ttf);
+  src: url(https://nithyanandauniversity.github.io/fontrepo/MavenProDevanagari/MavenProDevanagari.ttf);
 }
 
 @font-face {
@@ -375,8 +375,13 @@ summary {
   src: url(https://nithyanandauniversity.github.io/fontrepo/ABeeZeeDevanagari/ABeeZeeDevanagari.ttf);
 }
 
+@font-face {
+  font-family: Questrial-Devanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/QuestrialDevanagari/Questrial-Devanagari.ttf);
+}
+
 body {
-  font-family: ABeeZee-Devanagari;
+  font-family: Questrial-Devanagari;
 }
 
 h1,
@@ -421,7 +426,7 @@ a {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.06rem;
   text-align: justify;
   margin-bottom: 1em;
   line-height: 1.7em;
@@ -1656,7 +1661,6 @@ img {
 .nu_page_title h1 {
   color: #5e2121;
   margin: 0;
-  font-family: Ubuntu-Devanagari;
   font-size: 3.5rem;
 }
 
