@@ -336,6 +336,11 @@ summary {
 }
 
 @font-face {
+  font-family: Ubuntu-Devanagari-Caps;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/UbuntuDevanagari/Ubuntu-Devanagari-Caps.ttf);
+}
+
+@font-face {
   font-family: Merriweather-Devanagari;
   src: url(https://nithyanandauniversity.github.io/fontrepo/MerriweatherDevanagari/MerriweatherDevanagari.ttf);
 }
@@ -346,7 +351,7 @@ summary {
 }
 
 body {
-  font-family: Nunito-Devanagari;
+  font-family: Ubuntu-Devanagari;
 }
 
 h1,
@@ -358,7 +363,7 @@ h6 {
   color: #5e2121;
   margin-bottom: 0.3em;
   line-height: 1.3em;
-  font-family: Merriweather-Devanagari-Caps;
+  font-family: Ubuntu-Devanagari;
   font-weight: 400;
 }
 
@@ -390,6 +395,11 @@ a {
   color: #b69d7e;
   text-decoration: none;
   transition: 0.3s ease;
+}
+
+p {
+  font-size: 1rem;
+  text-align: justify;
 }
 
 p a:hover {
@@ -1618,10 +1628,9 @@ img {
 
 .nu_page_title h1 {
   color: #5e2121;
-  font-size: 3.5rem;
-  line-height: 1.2em;
-  /*font-family: Samarkan;*/
   margin: 0;
+  font-family: Ubuntu-Devanagari-Caps;
+  text-transform: uppercase;
 }
 
 .menu_nav {
