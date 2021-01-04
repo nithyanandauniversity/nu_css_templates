@@ -370,8 +370,13 @@ summary {
   src: url(https://nithyanandauniversity.github.io/fontrepo/RalewayDevanagari/Raleway-Devanagari.ttf);
 }
 
+@font-face {
+  font-family: Signika-Devanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/Signika-Devanagari.ttf);
+}
+
 body {
-  font-family: Questrial-Devanagari;
+  font-family: Signika-Devanagari;
 }
 
 h1,
