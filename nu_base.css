@@ -380,8 +380,13 @@ summary {
   src: url(https://nithyanandauniversity.github.io/fontrepo/QuestrialDevanagari/Questrial-Devanagari.ttf);
 }
 
+@font-face {
+  font-family: Raleway-Devanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/RalewayDevanagari/Raleway-Devanagari.ttf);
+}
+
 body {
-  font-family: MavenPro-Devanagari;
+  font-family: Raleway-Devanagari;
 }
 
 h1,
