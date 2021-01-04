@@ -365,8 +365,13 @@ summary {
   src: url(https://nithyanandauniversity.github.io/fontrepo/OpenSansDevanagari/OpenSansDevanagari.ttf);
 }
 
+@font-face {
+  font-family: MavenPro-Devanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/MavenProDevanagari/MavenPro-Devanagari.ttf);
+}
+
 body {
-  font-family: Ubuntu-Devanagari-Light;
+  font-family: MavenPro-Devanagari;
 }
 
 h1,
