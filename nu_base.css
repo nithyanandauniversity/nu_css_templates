@@ -361,7 +361,7 @@ summary {
 }
 
 body {
-  font-family: OpenSans-Devanagari;
+  font-family: WorkSans-Devanagari;
 }
 
 h1,
@@ -372,7 +372,7 @@ h5,
 h6 {
   color: #5e2121;
   margin-bottom: 0.3em;
-  line-height: 1.3em;
+  line-height: 1.4em;
   font-family: Ubuntu-Devanagari;
 }
 
@@ -1414,7 +1414,6 @@ img {
   width: 88.88%;
   margin: 0 auto;
   padding: 0 15px;
-  text-transform: uppercase;
 }
 
 .nav_children {
@@ -1628,20 +1627,23 @@ img {
 }
 
 .nu_page_title {
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .nu_page_subtitle h2 {
   font-size: 1rem;
+  letter-spacing: 3px;
   color: #ffffff;
   margin: 0;
+  text-transform: uppercase;
+  line-height: 1em;
 }
 
 .nu_page_title h1 {
   color: #5e2121;
   margin: 0;
-  font-family: Ubuntu-Devanagari-Caps;
-  text-transform: uppercase;
+  font-family: Ubuntu-Devanagari;
+  font-size: 3.5rem;
 }
 
 .menu_nav {
@@ -1994,4 +1996,13 @@ img.hover-zoom:hover {
   color: #d1af83;
   line-height: 1.3em;
   margin-bottom: 0.3em;
+}
+
+footer .lead {
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer p {
+  margin: 0;
 }
