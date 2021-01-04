@@ -371,12 +371,12 @@ summary {
 }
 
 @font-face {
-  font-family: Signika-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/Signika-Devanagari.ttf);
+  font-family: SignikaDevanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagari.ttf);
 }
 
 body {
-  font-family: Signika-Devanagari;
+  font-family: SignikaDevanagari;
 }
 
 h1,
@@ -388,6 +388,7 @@ h6 {
   color: #5e2121;
   margin-bottom: 0.3em;
   line-height: 1.4em;
+  font-weight: 500;
 }
 
 h1 {
