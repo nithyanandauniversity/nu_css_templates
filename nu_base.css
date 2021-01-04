@@ -370,8 +370,13 @@ summary {
   src: url(https://nithyanandauniversity.github.io/fontrepo/MavenProDevanagari/MavenPro-Devanagari.ttf);
 }
 
+@font-face {
+  font-family: ABeeZee-Devanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/ABeeZeeDevanagari/ABeeZee-Devanagari.ttf);
+}
+
 body {
-  font-family: MavenPro-Devanagari;
+  font-family: ABeeZee-Devanagari;
 }
 
 h1,
@@ -383,7 +388,6 @@ h6 {
   color: #5e2121;
   margin-bottom: 0.3em;
   line-height: 1.4em;
-  font-family: Ubuntu-Devanagari;
 }
 
 h1 {
