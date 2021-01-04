@@ -1,1 +1,23 @@
 /* empty add HS website specific css here */
+
+/* Section -> Subtle Top-Border */
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: #e0e0e0;
+}
+
+/* List -> "Refined List" Class */
+ul.refine {
+    list-style-type: none;
+}
+ul.refine > li:first-child {
+    padding-top: 0;
+}
+ul.refine > li {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
