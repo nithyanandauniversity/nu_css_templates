@@ -1640,7 +1640,7 @@ img {
 }
 
 .nu_page_title {
-  margin-top: -10px;
+  margin-top: -20px;
 }
 
 .nu_page_subtitle h2 {
@@ -1758,6 +1758,7 @@ img {
 
 .col_p {
   color: #ffffff;
+  font-size: 0.875rem;
 }
 
 .col_a {
@@ -1766,6 +1767,7 @@ img {
   transition: 0.3s ease;
   text-decoration: none;
   margin-top: 10px;
+  font-size: 0.875rem;
 }
 
 .col_a:after {
@@ -1779,6 +1781,13 @@ img {
   background: #d1af83;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
+}
+
+.col_div .col_a {
+  color: #d1af83;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
 }
 
 .col_li:hover a:after {
