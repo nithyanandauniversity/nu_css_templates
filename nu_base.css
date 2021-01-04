@@ -355,8 +355,13 @@ summary {
   src: url(https://nithyanandauniversity.github.io/fontrepo/WorkSansDevanagari/WorkSans-Devanagari.ttf);
 }
 
+@font-face {
+  font-family: OpenSans-Devanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/OpenSansDevanagari/OpenSans-Devanagari.ttf);
+}
+
 body {
-  font-family: WorkSans-Devanagari;
+  font-family: OpenSans-Devanagari;
 }
 
 h1,
