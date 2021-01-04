@@ -340,6 +340,11 @@ summary {
   src: url(https://nithyanandauniversity.github.io/fontrepo/MerriweatherDevanagari/MerriweatherDevanagari.ttf);
 }
 
+@font-face {
+  font-family: Merriweather-Devanagari-Caps;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/MerriweatherDevanagari/Merriweather-Devanagari-Caps.ttf);
+}
+
 body {
   font-family: Nunito-Devanagari;
 }
@@ -353,7 +358,7 @@ h6 {
   color: #5e2121;
   margin-bottom: 0.3em;
   line-height: 1.3em;
-  font-family: Merriweather-Devanagari;
+  font-family: Merriweather-Devanagari-Caps;
   font-weight: 400;
 }
 
@@ -1388,6 +1393,7 @@ img {
   width: 88.88%;
   margin: 0 auto;
   padding: 0 15px;
+  text-transform: uppercase;
 }
 
 .nav_children {
