@@ -1783,7 +1783,7 @@ img {
   transition: 0.8s;
 }
 
-menu_logo_a:after {
+.menu_logo_a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
