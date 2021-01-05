@@ -1544,16 +1544,18 @@ img {
 
 @keyframes rotate180 {
   from {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
+    color : #ffffff;
   }
   to {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
+    color: #d1af83;
   }
 }
 .menu_toggle_input:checked ~ .menu_toggle_label:after {
-  /*content: "\25B2";*/
+  content: "\25B2";
   display: inline-block;
-  animation : rotate180 1s infinite;
+  animation : rotate180 2s linear;
   /*font-size: 10px;
   padding-left: 6px;
   position: relative;
