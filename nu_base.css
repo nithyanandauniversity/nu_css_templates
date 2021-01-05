@@ -1571,6 +1571,10 @@ img {
   font-size: 2em;
   background : transparent;
   border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top : 0em;
 }
 .menu_toggle_close:hover { 
   color: #d1af83;
