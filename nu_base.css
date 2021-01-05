@@ -1714,6 +1714,7 @@ img {
   align-items: center;
   justify-content: center;
   margin: auto 1.5rem;
+  cursor : pointer;
 }
 
 .menu_logo_a {
@@ -1804,7 +1805,7 @@ img {
   font-size: 0.875rem;
 }
 
-.col_a {
+.col_a,menu_logo_a {
   position: relative;
   color: #ffffff;
   transition: 0.3s ease;
@@ -1813,7 +1814,7 @@ img {
   font-size: 0.875rem;
 }
 
-.col_a:after {
+.col_a:after,menu_logo_a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
