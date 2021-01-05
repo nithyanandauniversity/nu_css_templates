@@ -1542,14 +1542,22 @@ img {
   margin-left: 0.3rem;
 }
 
+@keyframes rotate180 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
 .menu_toggle_input:checked ~ .menu_toggle_label:after {
   /*content: "\25B2";*/
-  -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-  font-size: 10px;
+  display: inline-block;
+  animation : rotate180 1s linear;
+  /*font-size: 10px;
   padding-left: 6px;
   position: relative;
-  top: -1px;
+  top: -1px;*/
 }
 
 
