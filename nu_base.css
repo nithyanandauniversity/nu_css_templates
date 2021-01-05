@@ -1542,6 +1542,17 @@ img {
   margin-left: 0.3rem;
 }
 
+.menu_toggle_input:checked ~ .menu_toggle_label:after {
+  /*content: "\25B2";*/
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+
 .menu_mega_div {
   width: 100%;
   margin: 0 0.5rem;
