@@ -1553,7 +1553,7 @@ img {
 .menu_toggle_input:checked ~ .menu_toggle_label:after {
   /*content: "\25B2";*/
   display: inline-block;
-  animation : rotate180 1s linear;
+  animation : rotate180 1s infinite;
   /*font-size: 10px;
   padding-left: 6px;
   position: relative;
