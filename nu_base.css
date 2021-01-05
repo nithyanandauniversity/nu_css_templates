@@ -1536,6 +1536,17 @@ img {
   display: block;
 }
 
+@keyframes rotate180 {
+  from {
+    transform:  rotate(180deg);
+    color : #ffffff;
+  }
+  to {
+    transform: rotate(0deg);
+    color: #d1af83;
+  }
+}
+
 .menu_toggle_label:after {
   content: "\25BC";
   font-size: 0.6rem;
@@ -1544,16 +1555,7 @@ img {
   animation : rotate180 2s linear;
 }
 
-@keyframes rotate180 {
-  from {
-    transform:  scaleY(-1); /*rotate(180deg);*/
-    color : #ffffff;
-  }
-  to {
-    transform: scaleY(1);/*rotate(0deg);*/
-    color: #d1af83;
-  }
-}
+
 .menu_toggle_input:checked ~ .menu_toggle_label:after {
   content: "\25B2";
   font-size: 0.6rem;
