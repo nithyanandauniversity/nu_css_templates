@@ -1774,6 +1774,7 @@ img {
   font-size: 1.125rem;
   color: #ffffff;
   text-decoration-line: none;
+  transition: 0.3s ease;
 }
 
 .menu_hover_a:hover {
@@ -1781,6 +1782,20 @@ img {
   cursor: pointer;
   transition: 0.8s;
 }
+
+menu_logo_a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #d1af83;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
 
 .col_ul {
   border-bottom: 1px solid #d1af8320;
@@ -1805,7 +1820,7 @@ img {
   font-size: 0.875rem;
 }
 
-.col_a,.menu_logo_a {
+.col_a {
   position: relative;
   color: #ffffff;
   transition: 0.3s ease;
@@ -1814,7 +1829,7 @@ img {
   font-size: 0.875rem;
 }
 
-.col_a:after,.menu_logo_a:after {
+.col_a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
