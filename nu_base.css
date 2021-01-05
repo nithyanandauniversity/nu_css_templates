@@ -1511,24 +1511,6 @@ img {
   padding: 1.5rem;
 }
 
-.menu_toggle_checkbox {
-  display: none;
-}
-
-.menu_toggle_checkbox:not(checked) {
-  display: none;
-}
-
-.menu_toggle_checkbox:not(checked) ~ .menu_toggle_div {
-  display: block;
-}
-
-.menu_toggle_label:after {
-  content: "\25BC";
-  font-size: 0.6rem;
-  margin-left: 0.3rem;
-}
-
 .menu_mega {
   padding: 1.5rem;
   /*mega-menu{*/
@@ -1540,6 +1522,24 @@ img {
   /*}*/
   margin-bottom: 4rem;
   /*media-query-todo*/
+}
+
+.menu_toggle_checkbox {
+  display: none;
+}
+
+.menu_toggle_checkbox:not(checked) ~ .menu_mega { /*menu_toggle_div*/
+  display: none;
+}
+
+.menu_toggle_checkbox:checked ~ .menu_mega { /*.menu_toggle_div*/
+  display: block;
+}
+
+.menu_toggle_label:after {
+  content: "\25BC";
+  font-size: 0.6rem;
+  margin-left: 0.3rem;
 }
 
 .menu_mega_div {
