@@ -1546,11 +1546,11 @@ img {
 
 @keyframes rotate180 {
   from {
-    transform: rotate(180deg);
+    transform: rotateY(180deg);
     color : #ffffff;
   }
   to {
-    transform: rotate(0deg);
+    transform: rotateY(0deg);
     color: #d1af83;
   }
 }
