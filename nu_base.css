@@ -1540,6 +1540,8 @@ img {
   content: "\25BC";
   font-size: 0.6rem;
   margin-left: 0.3rem;
+  display: inline-block;
+  animation : rotate180 2s linear;
 }
 
 @keyframes rotate180 {
@@ -1554,8 +1556,6 @@ img {
 }
 .menu_toggle_input:checked ~ .menu_toggle_label:after {
   content: "\25B2";
-  display: inline-block;
-  animation : rotate180 2s linear;
   /*font-size: 10px;
   padding-left: 6px;
   position: relative;
