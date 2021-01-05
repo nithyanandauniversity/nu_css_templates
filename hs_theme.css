@@ -22,7 +22,7 @@ ul.refine > li {
     padding-top: 10px;
 }
 
-.highlight-box {
+.highlight-box-wrap {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
     background-color: #f1eded;
     border: 1px solid #f1f1f1;
