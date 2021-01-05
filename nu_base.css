@@ -1554,7 +1554,6 @@ img {
   display: inline-block;
 }
 
-
 .menu_toggle_input:checked ~ .menu_toggle_label:after {
   content: "\25B2";
   font-size: 0.6rem;
@@ -1567,6 +1566,12 @@ img {
   top: -1px;*/
 }
 
+.menu_toggle_close {
+  color : #ffffff;
+  font-size: 2em;
+  position: relative;
+  left : 2em;
+}
 
 .menu_mega_div {
   width: 100%;
