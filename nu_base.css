@@ -1574,6 +1574,11 @@ img {
   display: block;
 }
 
+.menu_toggle_label {
+  padding: 1.5rem;
+  display: block;
+}
+
 .menu_hover_a:after {
   content: "\25BC";
   font-size: 0.6rem;
