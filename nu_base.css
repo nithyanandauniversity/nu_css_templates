@@ -1524,15 +1524,15 @@ img {
   /*media-query-todo*/
 }
 
-.menu_toggle_checkbox {
+.menu_toggle_input {
   display: none;
 }
 
-.menu_toggle_checkbox:not(checked) ~ .menu_mega { /*menu_toggle_div*/
+.menu_toggle_input:not(checked) ~ .menu_mega { /*menu_toggle_div*/
   display: none;
 }
 
-.menu_toggle_checkbox:checked ~ .menu_mega { /*.menu_toggle_div*/
+.menu_toggle_input:checked ~ .menu_mega { /*.menu_toggle_div*/
   display: block;
 }
 
