@@ -45,7 +45,7 @@ ul.refine > li {
   width: 200px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin:auto;
 }
 
 .button span {
