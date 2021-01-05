@@ -1805,7 +1805,7 @@ img {
   font-size: 0.875rem;
 }
 
-.col_a,menu_logo_a {
+.col_a,.menu_logo_a {
   position: relative;
   color: #ffffff;
   transition: 0.3s ease;
@@ -1814,7 +1814,7 @@ img {
   font-size: 0.875rem;
 }
 
-.col_a:after,menu_logo_a:after {
+.col_a:after,.menu_logo_a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
