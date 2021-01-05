@@ -1569,6 +1569,11 @@ img {
 .menu_toggle_close {
   color : #ffffff;
   font-size: 2em;
+  background : transparent;
+  border: 0;
+}
+.menu_toggle_close:hover { 
+  color: #d1af83;
 }
 
 .menu_mega_div {
