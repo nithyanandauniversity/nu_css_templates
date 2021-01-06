@@ -1977,8 +1977,8 @@ blockquote::before {
   font-size: 120px;
   color: rgba(51, 51, 51, 0.25);
   float: right;
-  top: -30px;
-  right: -7.5px;
+  top: -1.875rem; /*-30px;*/
+  right: -0.46875rem;/*-7.5px;*/
   position: absolute;
   opacity: 0.5;
 }
@@ -2036,6 +2036,39 @@ blockquote::before {
 
 .video_overlay_play_button:hover {
   opacity: 1;
+}
+
+.nu_blockquote {
+  display : flex;
+  height : 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.nu_blockquote > blockquote{
+  padding-left : 1.5rem;
+  padding-right : 1.5rem;
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+.nu_blockquote > blockquote::before {
+  top: initial !important;
+}
+
+.nu_blockquote > figcaption{
+  padding : 1rem 0;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.nu_blockquote > figcaption > cite > time {
+  content : '\n';
+  font-weight: bold;
+}
+
+.nu_blockquote > figcaption > cite > time:before{
+  content : '\a';
+  display: block;
 }
 
 .footer_content {
