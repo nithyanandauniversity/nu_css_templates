@@ -356,6 +356,11 @@ summary {
 }
 
 @font-face {
+  font-family: MavenPro-Devanagari-Medium;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/MavenProDevanagari/MavenPro-Devanagari-Medium.ttf);
+}
+
+@font-face {
   font-family: ABeeZee-Devanagari;
   src: url(https://nithyanandauniversity.github.io/fontrepo/ABeeZeeDevanagari/ABeeZeeDevanagari.ttf);
 }
@@ -388,7 +393,7 @@ h6 {
   color: #5e2121;
   margin-bottom: 0.3em;
   line-height: 1.4em;
-  font-weight: 800;
+  font-family: MavenPro-Devanagari-Medium;
 }
 
 h1 {
