@@ -300,11 +300,6 @@ summary {
   src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagariMedium.ttf);
 }
 
-@font-face {
-  font-family: FontAwesome;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/FontAwesome/webfonts/fa-regular-400.ttf);
-}
-
 body {
   font-family: SignikaDevanagari;
 }
@@ -359,11 +354,6 @@ a:hover {
 p {
   margin-bottom: 1em;
   line-height: 1.7em;
-}
-
-a::after {
-  font-family: FontAwesome;
-  content: "\f061";
 }
 
 p a:hover {
