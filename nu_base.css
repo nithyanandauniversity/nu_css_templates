@@ -427,13 +427,16 @@ h6 {
 }
 
 a {
-  color: #b69d7e;
+  color: #5e2121;
   text-decoration: none;
   transition: 0.3s ease;
 }
 
+a:hover {
+  color: #d1af83;
+}
+
 p {
-  font-size: 1.06rem;
   margin-bottom: 1em;
   line-height: 1.7em;
 }
@@ -448,7 +451,9 @@ img {
 }
 
 em {
-  font-style: normal !important;
+  font-style: normal;
+  font-weight: 800;
+  font-family: SignikaDevanagariMedium;
 }
 
 .container-fluid,
@@ -1743,6 +1748,7 @@ em {
   color: #f2ce9f;
   margin: 0px;
   padding-left: 0.5rem;
+  font-family: SignikaDevanagariMedium;
 }
 
 .menu_logo_img {
@@ -1826,17 +1832,18 @@ em {
 }
 
 .col_li:hover a {
-  color: #d1af83;
+  color: #f2ce9f;
 }
 
-.col_h {
+.col_h a {
   color: #f2ce9f;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .col_p {
   color: #ffffff;
-  font-size: 0.875rem;
 }
 
 .col_a {
@@ -1845,7 +1852,6 @@ em {
   transition: 0.3s ease;
   text-decoration: none;
   margin-top: 10px;
-  font-size: 0.875rem;
 }
 
 .col_a:after {
@@ -1862,10 +1868,7 @@ em {
 }
 
 .col_div .col_a {
-  color: #d1af83;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  letter-spacing: 3px;
+  color: #f2ce9f;
 }
 
 .col_li:hover a:after {
@@ -2150,11 +2153,12 @@ img.hover-zoom:hover {
   color: #5e2121;
 }
 
-.highlight-box:hover h5.entry-name > a {
+.highlight-box h5.entry-name > a:hover {
   color: #d1af83;
 }
 
 .lead {
+  font-family: SignikaDevanagariMedium;
   font-size: 1.5rem;
   color: #d1af83;
   line-height: 1.3em;
