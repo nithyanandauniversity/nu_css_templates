@@ -305,6 +305,11 @@ summary {
   src: url(https://nithyanandauniversity.github.io/fontrepo/PoppinsDevanagari/PoppinsDevanagari-Regular.ttf);
 }
 
+@font-face {
+  font-family: PoppinsDevanagari-Medium;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/PoppinsDevanagari/Poppins-Devanagari-Medium.ttf);
+}
+
 body {
   font-family: PoppinsDevanagari-Regular;
 }
@@ -318,7 +323,7 @@ h6 {
   color: #5e2121;
   margin-bottom: 0.3em;
   line-height: 1.4em;
-  font-family: PoppinsDevanagari-Regular;
+  font-family: PoppinsDevanagari-Medium;
   font-weight: 500;
 }
 
