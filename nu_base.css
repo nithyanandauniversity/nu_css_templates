@@ -363,7 +363,7 @@ p {
 
 a::after {
   font-family: FontAwesome;
-  content: "f061";
+  content: "\f061";
 }
 
 p a:hover {
