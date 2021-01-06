@@ -299,13 +299,8 @@ summary {
 }
 
 @font-face {
-  font-family: PoppinsDevanagariRegular;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/PoppinsDevanagari/PoppinsDevanagari-Regular.ttf);
-}
-
-@font-face {
-  font-family: PoppinsDevanagariMedium;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/PoppinsDevanagari/Poppins-Devanagari-Medium.ttf);
+  font-family: FontAwesome;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/FontAwesome/Web/webfonts/fa-light-300.woff2);
 }
 
 :root {
@@ -359,6 +354,44 @@ a {
   color: #5e2121;
   text-decoration: none;
   transition: 0.3s ease;
+  position: relative;
+}
+
+a.icon::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  content: "\00A0\f178";
+  font-size: 0.75em;
+}
+
+.refine a::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  content: "\00A0\f178";
+  font-size: 0.75em;
+}
+
+a.col_a::before {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  padding-top: 3px;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  content: "\00A0\f178";
+  font-size: 0.75em;
 }
 
 a:hover {
@@ -1500,37 +1533,36 @@ em {
 }
 
 .menu_toggle_label:after {
-  /* Parashiva have a look at this svg down arrow, it works, but it is too big */
-  /*content: url('data:image/svg+xml;charset=UTF-8,<svg width="982pt" height="525pt" viewBox="0 0 982 525" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d=" M 38.36 0.00 L 41.63 0.00 C 60.44 1.03 73.91 16.06 86.25 28.75 C 221.23 158.38 355.92 288.66 490.96 418.03 C 631.19 283.64 770.92 148.60 910.98 13.98 C 918.76 5.74 929.50 1.27 940.38 0.00 L 943.64 0.00 C 964.15 1.27 981.66 18.84 982.00 39.36 L 982.00 40.67 C 980.95 48.85 978.51 56.92 973.80 63.80 C 823.98 213.03 673.35 361.34 523.25 510.25 C 517.19 517.63 508.66 522.48 499.60 525.00 L 482.40 525.00 C 451.17 511.77 432.19 479.96 406.94 458.15 C 402.85 454.17 399.53 447.45 393.79 446.12 C 364.73 417.25 335.61 388.41 306.96 359.15 C 302.52 354.84 298.85 347.83 292.79 346.12 C 198.39 251.83 102.98 158.72 8.72 64.27 C 2.86 57.63 1.69 48.71 0.00 40.65 L 0.00 39.35 C 0.21 18.86 17.92 1.28 38.36 0.00 Z" /></svg>');*/
-  content: "\25BC";
-  font-size: 0.6rem;
-  margin-left: 0.3rem;
   display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  content: "\00A0\f107";
+  font-weight: 800;
+  transform: translateY(1px);
+  transition: 0.5s ease;
 }
 
 .menu_toggle_input:checked ~ .menu_toggle_label:after {
-  content: "\25B2";
-  font-size: 0.6rem;
-  margin-left: 0.3rem;
-  display: inline-block;
-  animation: rotate180 2s linear;
-  /*font-size: 10px;
-  padding-left: 6px;
-  position: relative;
-  top: -1px;*/
+  transform: rotateX(180deg);
 }
 
-.menu_toggle_close {
+.menu_toggle_close::after {
   color: #ffffff;
-  font-size: 2em;
+  font-size: 1.25em;
   background: transparent;
   border: 0;
   cursor: pointer;
+  font-family: FontAwesome;
+  content: "\f00d";
+  transition: 0.3s ease;
   position: absolute;
+  top: 1em;
   right: 1em;
-  top: 0em;
 }
-.menu_toggle_close:hover {
+.menu_toggle_close:hover::after {
   color: #d1af83;
 }
 
