@@ -2005,6 +2005,30 @@ blockquote::before {
   object-position: center;
 }
 
+.video_overlay_play:after {
+  content: '<svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video"><circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/><polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\</svg>';
+}
+
+/* Idea from https://codepen.io/chrisnager/pen/jPrJgQ?editors=0110 */
+.video_overlay_play_button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px calc(50% - 50px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 0.95;
+  cursor: pointer;
+  background-image: linear-gradient(transparent, #000);
+  transition: opacity 150ms;
+}
+
+.video_overlay_play_button:hover {
+  opacity: 1;
+}
+
 .footer_content {
   width: 80%;
   margin: 0 auto;
