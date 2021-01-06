@@ -291,91 +291,6 @@ summary {
 }
 
 @font-face {
-  font-family: Poppins-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/PoppinsDevanagari/Poppins-Devanagari.ttf);
-}
-
-@font-face {
-  font-family: Mart-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/Mart%20Devanagari/MartDevanagari.ttf);
-}
-
-@font-face {
-  font-family: SourceSansPro-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/SourceSansProDevanagari/SourceSansPro-Devanagari.ttf);
-}
-
-@font-face {
-  font-family: Karla-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/KarlaDevanagari/Karla-Devanagari.ttf);
-}
-
-@font-face {
-  font-family: Nunito-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/NunitoDevanagari/Nunito-Devanagari.ttf);
-}
-
-@font-face {
-  font-family: Ubuntu-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/UbuntuDevanagari/Ubuntu-Devanagari.ttf);
-}
-
-@font-face {
-  font-family: Ubuntu-Devanagari-Light;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/UbuntuDevanagari/Ubuntu-Devanagari-Light.ttf);
-}
-
-@font-face {
-  font-family: Ubuntu-Devanagari-Caps;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/UbuntuDevanagari/Ubuntu-Devanagari-Caps.ttf);
-}
-
-@font-face {
-  font-family: Merriweather-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/MerriweatherDevanagari/MerriweatherDevanagari.ttf);
-}
-
-@font-face {
-  font-family: Merriweather-Devanagari-Caps;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/MerriweatherDevanagari/Merriweather-Devanagari-Caps.ttf);
-}
-
-@font-face {
-  font-family: WorkSans-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/WorkSansDevanagari/WorkSans-Devanagari.ttf);
-}
-
-@font-face {
-  font-family: OpenSans-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/OpenSansDevanagari/OpenSansDevanagari.ttf);
-}
-
-@font-face {
-  font-family: MavenPro-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/MavenProDevanagari/MavenProDevanagari.ttf);
-}
-
-@font-face {
-  font-family: MavenPro-Devanagari-Medium;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/MavenProDevanagari/MavenPro-Devanagari-Medium.ttf);
-}
-
-@font-face {
-  font-family: ABeeZee-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/ABeeZeeDevanagari/ABeeZeeDevanagari.ttf);
-}
-
-@font-face {
-  font-family: Questrial-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/QuestrialDevanagari/Questrial-Devanagari.ttf);
-}
-
-@font-face {
-  font-family: Raleway-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/RalewayDevanagari/Raleway-Devanagari.ttf);
-}
-
-@font-face {
   font-family: SignikaDevanagari;
   src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagari.ttf);
 }
@@ -383,6 +298,11 @@ summary {
 @font-face {
   font-family: SignikaDevanagariMedium;
   src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagariMedium.ttf);
+}
+
+@font-face {
+  font-family: FontAwesome;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/FontAwesome/webfonts/fa-regular-400.woff2);
 }
 
 body {
@@ -439,6 +359,11 @@ a:hover {
 p {
   margin-bottom: 1em;
   line-height: 1.7em;
+}
+
+a::after {
+  font-family: FontAwesome;
+  content: "f061";
 }
 
 p a:hover {
