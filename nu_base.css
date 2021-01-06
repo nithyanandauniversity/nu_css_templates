@@ -1,5 +1,3 @@
-/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-
 /*
 Document
 ========
@@ -291,27 +289,33 @@ summary {
 }
 
 @font-face {
-  font-family: SignikaDevanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagari.ttf);
+  font-family: SignikaDevanagariLight;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagariLight.ttf);
 }
 
 @font-face {
-  font-family: SignikaDevanagariMedium;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagariMedium.ttf);
+  font-family: SignikaDevanagariRegular;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagariRegular.ttf);
 }
 
 @font-face {
-  font-family: PoppinsDevanagari-Regular;
+  font-family: PoppinsDevanagariRegular;
   src: url(https://nithyanandauniversity.github.io/fontrepo/PoppinsDevanagari/PoppinsDevanagari-Regular.ttf);
 }
 
 @font-face {
-  font-family: PoppinsDevanagari-Medium;
+  font-family: PoppinsDevanagariMedium;
   src: url(https://nithyanandauniversity.github.io/fontrepo/PoppinsDevanagari/Poppins-Devanagari-Medium.ttf);
 }
 
+:root {
+  --headingfont: SignikaDevanagariRegular;
+  --bodyfont: SignikaDevanagariLight;
+  --headingfontweight: 500;
+}
+
 body {
-  font-family: PoppinsDevanagari-Regular;
+  font-family: var(--bodyfont);
 }
 
 h1,
@@ -323,8 +327,8 @@ h6 {
   color: #5e2121;
   margin-bottom: 0.3em;
   line-height: 1.4em;
-  font-family: PoppinsDevanagari-Medium;
-  font-weight: 500;
+  font-family: var(--headingfont);
+  font-weight: var(--headingfontweight);
 }
 
 h1 {
@@ -378,7 +382,7 @@ img {
 em {
   font-style: normal;
   font-weight: 800;
-  font-family: SignikaDevanagariMedium;
+  font-family: var(--headingfont);
 }
 
 .container-fluid,
@@ -1673,7 +1677,7 @@ em {
   color: #f2ce9f;
   margin: 0px;
   padding-left: 0.5rem;
-  font-family: SignikaDevanagariMedium;
+  font-family: var(--headingfont);
 }
 
 .menu_logo_img {
@@ -2083,7 +2087,7 @@ img.hover-zoom:hover {
 }
 
 .lead {
-  font-family: SignikaDevanagariMedium;
+  font-family: var(--headingfont);
   font-size: 1.5rem;
   color: #d1af83;
   line-height: 1.3em;
