@@ -74,6 +74,7 @@ ul.refine > li {
   right: 0;
 }
 
+/* Added Contact Form CSS; style from: https://www.pixpa.com/contact-us */
 .contact-form-field {
     border: 1px solid #e5e5e5;
     border-radius: 5px;
@@ -82,4 +83,9 @@ ul.refine > li {
     padding: 15px 20px;
     margin-bottom: 20px;
     font-size: 16px;
+}
+
+/* Added font-style for drop-down list */
+option.style1{
+    font-family: SignikaDevanagariRegular;
 }
