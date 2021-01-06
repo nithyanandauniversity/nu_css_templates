@@ -73,3 +73,13 @@ ul.refine > li {
   opacity: 1;
   right: 0;
 }
+
+.contact-form-field {
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    outline: 0;
+    width: 80%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
