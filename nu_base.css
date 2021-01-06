@@ -1548,6 +1548,8 @@ img {
 }
 
 .menu_toggle_label:after {
+  /* Parashiva have a look at this svg down arrow, it works, but it is too big */
+  /*content: url('data:image/svg+xml;charset=UTF-8,<svg width="982pt" height="525pt" viewBox="0 0 982 525" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d=" M 38.36 0.00 L 41.63 0.00 C 60.44 1.03 73.91 16.06 86.25 28.75 C 221.23 158.38 355.92 288.66 490.96 418.03 C 631.19 283.64 770.92 148.60 910.98 13.98 C 918.76 5.74 929.50 1.27 940.38 0.00 L 943.64 0.00 C 964.15 1.27 981.66 18.84 982.00 39.36 L 982.00 40.67 C 980.95 48.85 978.51 56.92 973.80 63.80 C 823.98 213.03 673.35 361.34 523.25 510.25 C 517.19 517.63 508.66 522.48 499.60 525.00 L 482.40 525.00 C 451.17 511.77 432.19 479.96 406.94 458.15 C 402.85 454.17 399.53 447.45 393.79 446.12 C 364.73 417.25 335.61 388.41 306.96 359.15 C 302.52 354.84 298.85 347.83 292.79 346.12 C 198.39 251.83 102.98 158.72 8.72 64.27 C 2.86 57.63 1.69 48.71 0.00 40.65 L 0.00 39.35 C 0.21 18.86 17.92 1.28 38.36 0.00 Z" /></svg>');*/
   content: "\25BC";
   font-size: 0.6rem;
   margin-left: 0.3rem;
@@ -2006,7 +2008,14 @@ blockquote::before {
 }
 
 .video_overlay_play:after {
-  content: '<svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video"><circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/><polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\</svg>';
+  /* Parashiva, the # style of specifying colors in hexadecimals might not work, the # character is illegal, u need to escape it i guess  */
+  content: url('data:image/svg+xml;charset=UTF-8,<svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="100" r="90" stroke-width="15" fill="none" stroke="%23F2CE9F"  /><polygon points="70, 55 70, 145 145, 100" fill="%23F2CE9F" /></svg>');
+  width: 12%;
+  margin: calc(25% - 6%) calc(50% - 6%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
 }
 
 /* Idea from https://codepen.io/chrisnager/pen/jPrJgQ?editors=0110 */
