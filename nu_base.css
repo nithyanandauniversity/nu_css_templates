@@ -329,14 +329,24 @@ summary {
 }
 
 @font-face {
+  font-family: CeraProDevanagariRegular;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/CeraProDevanagari/CeraProDevanagariRegular.ttf);
+}
+
+@font-face {
+  font-family: CeraProDevanagariMedium;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/CeraProDevanagari/CeraPro-DevanagariMedium.ttf);
+}
+
+@font-face {
   font-family: FontAwesome;
   src: url(https://nithyanandauniversity.github.io/fontrepo/FontAwesome/Web/webfonts/fa-light-300.woff2);
 }
 
 :root {
-  --headingfont: MarineRegularDevanagari;
-  --bodyfont: MarineRegularDevanagari;
-  --headingfontweight: 600;
+  --headingfont: CeraProDevanagariMedium;
+  --bodyfont: CeraProDevanagariRegular;
+  --headingfontweight: 500;
 }
 
 body {
