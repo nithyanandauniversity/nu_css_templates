@@ -1564,6 +1564,7 @@ em {
 }
 .menu_toggle_close:hover::after {
   color: #d1af83;
+  transform: scale(1.3);
 }
 
 .menu_mega_div {
