@@ -309,14 +309,19 @@ summary {
 }
 
 @font-face {
+  font-family: FordAntenna-DevanagariRegular;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/FordAntennaDevanagari/FordAntenna-DevanagariRegular.ttf);
+}
+
+@font-face {
   font-family: FontAwesome;
   src: url(https://nithyanandauniversity.github.io/fontrepo/FontAwesome/Web/webfonts/fa-light-300.woff2);
 }
 
 :root {
-  --headingfont: PFBeauSansProDevanagariSemiBold;
-  --bodyfont: PFBeauSansProDevanagariRegular;
-  --headingfontweight: 500;
+  --headingfont: FordAntenna-DevanagariRegular;
+  --bodyfont: FordAntenna-DevanagariRegular;
+  --headingfontweight: 600;
 }
 
 body {
