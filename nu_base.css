@@ -468,9 +468,36 @@ em {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 80%;
   margin: auto;
   row-gap: 2rem;
+}
+
+@media all and (max-width: 48em) {
+  .row {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 48em) {
+  .row {
+    width: 85%;
+  }
+}
+
+@media all and (min-width: 64em) {
+  .row {
+    width: 85%;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .row {
+    width: 80%;
+  }
+}
+
+.full-width.row {
+  width: 100%;
 }
 
 .row.reverse {
@@ -1432,9 +1459,32 @@ em {
 }
 
 .nu_page_title_row {
-  width: 88.88%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media all and (max-width: 48em) {
+  .nu_page_title_row {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 48em) {
+  .nu_page_title_row {
+    width: 94.44%;
+  }
+}
+
+@media all and (min-width: 64em) {
+  .nu_page_title_row {
+    width: 94.44%;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .nu_page_title_row {
+    width: 88.88%;
+  }
 }
 
 .nav_children {
@@ -1467,9 +1517,9 @@ em {
   padding-right: 0.5rem;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 48em) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
   .nu_page_title_container {
     margin: 0;
@@ -1481,8 +1531,11 @@ em {
   .nu_hero_banner {
     height: 35vh;
   }
-  .row {
-    width: 85%;
+}
+
+@media all and (min-width: 75em) {
+  html {
+    font-size: 18px;
   }
 }
 
@@ -2086,7 +2139,6 @@ blockquote::before {
 }
 
 .footer_content {
-  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
@@ -2166,4 +2218,12 @@ footer .lead {
 
 footer p {
   margin: 0;
+}
+
+.centered_col {
+  margin: 0 auto;
+}
+
+.justified_content {
+  text-align: justify;
 }
