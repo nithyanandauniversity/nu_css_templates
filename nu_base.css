@@ -459,7 +459,7 @@ img {
 
 em {
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   font-family: var(--headingfont);
 }
 
@@ -1796,6 +1796,7 @@ em {
   margin: 0;
   text-transform: uppercase;
   line-height: 1em;
+  font-family: var(--bodyfont);
 }
 
 .nu_page_title h1 {
@@ -1826,7 +1827,8 @@ em {
   color: #f2ce9f;
   margin: 0px;
   padding-left: 0.5rem;
-  font-family: var(--headingfont);
+  font-family: var(--bodyfont);
+  font-weight: 600;
 }
 
 @media all and (max-width: 48em) {
@@ -1932,11 +1934,12 @@ em {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: var(--bodyfont);
 }
 
 .col_p {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.88rem;
 }
 
 .col_a {
@@ -1944,7 +1947,7 @@ em {
   color: #ffffff;
   transition: 0.3s ease;
   text-decoration: none;
-  margin-top: 10px;
+  font-size: 0.88rem;
 }
 
 .col_a:after {
@@ -2251,6 +2254,7 @@ img.hover-zoom:hover {
 
 .lead {
   font-family: var(--headingfont);
+  font-weight: 600;
   font-size: 1.5rem;
   color: #d1af83;
   line-height: 1.3em;
@@ -2260,6 +2264,7 @@ img.hover-zoom:hover {
 footer .lead {
   font-size: 1rem;
   margin: 0;
+  font-family: var(--bodyfont);
 }
 
 footer p {
