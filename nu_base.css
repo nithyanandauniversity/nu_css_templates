@@ -309,9 +309,9 @@ summary {
 }
 
 :root {
-  --headingfont: SignikaDevanagariRegular;
-  --bodyfont: SignikaDevanagariLight;
-  --headingfontweight: 500;
+  --headingfont: HypatiaSansProDevanagari;
+  --bodyfont: HypatiaSansProDevanagari;
+  --headingfontweight: 600;
 }
 
 body {
