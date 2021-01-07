@@ -290,12 +290,17 @@ summary {
 
 @font-face {
   font-family: SignikaDevanagariLight;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagariLight.ttf);
+  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagari-DevanagariLight.ttf);
 }
 
 @font-face {
   font-family: SignikaDevanagariRegular;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagariRegular.ttf);
+  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagariRegular-DevanagariRegular.ttf);
+}
+
+@font-face {
+  font-family: SignikaDevanagariCaps;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagari-DevanagariCaps.ttf);
 }
 
 @font-face {
