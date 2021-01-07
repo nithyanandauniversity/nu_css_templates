@@ -289,53 +289,8 @@ summary {
 }
 
 @font-face {
-  font-family: SignikaDevanagariLight;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagari-DevanagariLight.ttf);
-}
-
-@font-face {
-  font-family: SignikaDevanagariRegular;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagariRegular-DevanagariRegular.ttf);
-}
-
-@font-face {
-  font-family: PFBeauSansProDevanagariRegular;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/PFBeauSansProDevanagari/PFBeauSansPro-DevanagariRegular.ttf);
-}
-
-@font-face {
-  font-family: PFBeauSansProDevanagariSemiBold;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/PFBeauSansProDevanagari/PFBeauSansPro-DevanagariSemiBold.ttf);
-}
-
-@font-face {
-  font-family: FordAntenna-DevanagariRegular;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/FordAntennaDevanagari/FordAntenna-DevanagariRegular.ttf);
-}
-
-@font-face {
   font-family: RenaultLifeDevanagari;
   src: url(https://nithyanandauniversity.github.io/fontrepo/RenaultLifeDevanagari/RenaultLifeDevanagari.ttf);
-}
-
-@font-face {
-  font-family: RenaultLifeDevanagariBold;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/RenaultLifeDevanagari/RenaultLife-DevanagariBold.ttf);
-}
-
-@font-face {
-  font-family: Nunito-Devanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/NunitoDevanagari/Nunito-Devanagari.ttf);
-}
-
-@font-face {
-  font-family: CeraProDevanagariRegular;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/CeraProDevanagari/CeraProDevanagariRegular.ttf);
-}
-
-@font-face {
-  font-family: MerriweatherDevanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/MerriweatherDevanagari/MerriweatherDevanagari.ttf);
 }
 
 @font-face {
@@ -349,7 +304,7 @@ summary {
 }
 
 :root {
-  --headingfont: MerriweatherDevanagari;
+  --headingfont: RenaultLifeDevanagari;
   --bodyfont: OpenSansDevanagari;
   --headingfontweight: 600;
 }
@@ -1796,7 +1751,6 @@ em {
   margin: 0;
   text-transform: uppercase;
   line-height: 1em;
-  font-family: var(--bodyfont);
 }
 
 .nu_page_title h1 {
@@ -1827,7 +1781,7 @@ em {
   color: #f2ce9f;
   margin: 0px;
   padding-left: 0.5rem;
-  font-family: var(--bodyfont);
+  font-family: var(--headingfont);
   font-weight: 600;
 }
 
@@ -1934,7 +1888,6 @@ em {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: var(--bodyfont);
 }
 
 .col_p {
