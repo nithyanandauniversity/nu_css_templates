@@ -32,7 +32,7 @@ Use a more readable tab size (opinionated).
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /*
@@ -299,8 +299,8 @@ summary {
 }
 
 @font-face {
-  font-family: HypatiaSansProDevanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/HypatiaSansProDevanagari/HypatiaSansProDevanagari.ttf);
+  font-family: AdobeCleanDevanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/AdobeCleanDevanagari/AdobeCleanDevanagariRegular.ttf);
 }
 
 @font-face {
@@ -309,8 +309,8 @@ summary {
 }
 
 :root {
-  --headingfont: HypatiaSansProDevanagari;
-  --bodyfont: HypatiaSansProDevanagari;
+  --headingfont: AdobeCleanDevanagari;
+  --bodyfont: AdobeCleanDevanagari;
   --headingfontweight: 600;
 }
 
