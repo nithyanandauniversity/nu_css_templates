@@ -314,13 +314,18 @@ summary {
 }
 
 @font-face {
+  font-family: RenaultLifeDevanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/RenaultLifeDevanagari/RenaultLifeDevanagari.ttf);
+}
+
+@font-face {
   font-family: FontAwesome;
   src: url(https://nithyanandauniversity.github.io/fontrepo/FontAwesome/Web/webfonts/fa-light-300.woff2);
 }
 
 :root {
-  --headingfont: FordAntenna-DevanagariRegular;
-  --bodyfont: FordAntenna-DevanagariRegular;
+  --headingfont: RenaultLifeDevanagari;
+  --bodyfont: RenaultLifeDevanagari;
   --headingfontweight: 600;
 }
 
