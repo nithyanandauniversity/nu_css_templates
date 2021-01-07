@@ -2233,11 +2233,6 @@ footer p {
   text-align: justify;
 }
 
-<<<<<<< HEAD
-.hs_std_def_content {
-  text-align: justify;
-}
-=======
 table {
   font-family: Tahoma;
   font-size: 0.88rem;
@@ -2262,4 +2257,7 @@ table td {
     border-right: 1px solid #d1af8350;
   }
 }
->>>>>>> 83a7e73409a03bd348d7fcbce3ca7afec1a3d83a
+
+.hs_std_def_content {
+  text-align: justify;
+}
