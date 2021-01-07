@@ -324,14 +324,19 @@ summary {
 }
 
 @font-face {
+  font-family: MarineRegularDevanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/MarineRegularDevanagari/MarineRegular-Regular-Devanagari.ttf);
+}
+
+@font-face {
   font-family: FontAwesome;
   src: url(https://nithyanandauniversity.github.io/fontrepo/FontAwesome/Web/webfonts/fa-light-300.woff2);
 }
 
 :root {
-  --headingfont: RenaultLifeDevanagariBold;
-  --bodyfont: RenaultLifeDevanagari;
-  --headingfontweight: 500;
+  --headingfont: MarineRegularDevanagari;
+  --bodyfont: MarineRegularDevanagari;
+  --headingfontweight: 600;
 }
 
 body {
