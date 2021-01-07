@@ -1718,6 +1718,8 @@ em {
   z-index: 10;
   background: #400404;
   padding: 15px 0;
+  width: 90%;
+  margin: auto;
 }
 
 .container {
@@ -2233,6 +2235,7 @@ footer p {
   text-align: justify;
 }
 
+/*
 table {
   font-family: Tahoma;
   font-size: 0.88rem;
@@ -2261,3 +2264,5 @@ table td {
 .hs_std_def_content {
   text-align: justify;
 }
+
+*/
