@@ -324,8 +324,8 @@ summary {
 }
 
 @font-face {
-  font-family: MarineRegularDevanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/MarineRegularDevanagari/MarineRegular-Regular-Devanagari.ttf);
+  font-family: Nunito-Devanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/NunitoDevanagari/Nunito-Devanagari.ttf);
 }
 
 @font-face {
@@ -334,8 +334,13 @@ summary {
 }
 
 @font-face {
-  font-family: CeraProDevanagariMedium;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/CeraProDevanagari/CeraPro-DevanagariMedium.ttf);
+  font-family: MerriweatherDevanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/MerriweatherDevanagari/MerriweatherDevanagari.ttf);
+}
+
+@font-face {
+  font-family: OpenSansDevanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/OpenSansDevanagari/OpenSans-DevanagariRegular.ttf);
 }
 
 @font-face {
@@ -344,9 +349,9 @@ summary {
 }
 
 :root {
-  --headingfont: CeraProDevanagariMedium;
-  --bodyfont: CeraProDevanagariRegular;
-  --headingfontweight: 500;
+  --headingfont: MerriweatherDevanagari;
+  --bodyfont: OpenSansDevanagari;
+  --headingfontweight: 600;
 }
 
 body {
