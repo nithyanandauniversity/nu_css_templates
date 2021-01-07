@@ -1522,22 +1522,6 @@ em {
   padding-right: 0.5rem;
 }
 
-@media all and (max-width: 48em) {
-  html {
-    font-size: 14px;
-  }
-  .nu_page_title_container {
-    margin: 0;
-    width: 100%;
-  }
-  .nu_page_title_row {
-    width: 85%;
-  }
-  .nu_hero_banner {
-    height: 35vh;
-  }
-}
-
 @media all and (min-width: 75em) {
   html {
     font-size: 18px;
@@ -1712,6 +1696,22 @@ em {
   width: 100%;
 }
 
+@media all and (max-width: 48em) {
+  html {
+    font-size: 14px;
+  }
+  .nu_page_title_container {
+    margin: 0;
+    width: 100%;
+  }
+  .nu_page_title_row {
+    width: 85%;
+  }
+  .nu_hero_banner {
+    height: 35vh;
+  }
+}
+
 .nu_footer {
   display: block;
   position: relative;
@@ -1803,6 +1803,28 @@ em {
   margin: 0px;
   padding-left: 0.5rem;
   font-family: var(--headingfont);
+}
+
+@media all and (max-width: 48em) {
+  .menu_logo_div {
+    flex-flow: column nowrap;
+    background: #400404;
+    padding: 0.8rem;
+    position: absolute;
+    overflow-y: visible;
+    margin-right: auto;
+    margin-left: 0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  .menu_logo_a {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  .menu_group_ul {
+    padding-left: 3.5rem;
+    margin-left: auto;
+  }
 }
 
 .menu_logo_img {
@@ -2260,9 +2282,8 @@ table td {
     border-right: 1px solid #d1af8350;
   }
 }
+*/
 
 .hs_std_def_content {
   text-align: justify;
 }
-
-*/
