@@ -1550,6 +1550,14 @@ em {
   padding: 0;
 }
 
+.menu_link_a,
+.menu_toggle_label {
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1.25rem;
+}
+
 .menu_link_li {
   margin: 0;
   padding: 0;
@@ -1558,7 +1566,8 @@ em {
 .menu_link_a {
   position: relative;
   display: block;
-  padding: 1.5rem;
+  color: #ffffff;
+  text-decoration-line: none;
 }
 
 .menu_mega {
@@ -1674,8 +1683,9 @@ em {
 }
 
 .menu_toggle_label {
-  padding: 1.5rem;
   display: block;
+  color: #ffffff;
+  text-decoration-line: none;
 }
 
 .menu_hover_a:after {
@@ -1717,8 +1727,7 @@ em {
   position: relative;
   z-index: 10;
   background: #400404;
-  padding: 15px 0;
-  width: 90%;
+  padding: 15px 5%;
   margin: auto;
 }
 
@@ -1822,8 +1831,12 @@ em {
     font-size: 1.5rem;
   }
   .menu_group_ul {
-    padding-left: 3.5rem;
+    padding-left: 4rem;
     margin-left: auto;
+  }
+  .menu_link_a,
+  .menu_toggle_label {
+    padding: 1rem;
   }
 }
 
@@ -1832,22 +1845,10 @@ em {
   /*margin-top : auto; margin-bottom : auto;*/
 }
 
-.menu_link_a {
-  font-size: 1.125rem;
-  color: #ffffff;
-  text-decoration-line: none;
-}
-
 .menu_link_a:hover {
   color: #d1af83;
   cursor: pointer;
   transition: 0.8s;
-}
-
-.menu_toggle_label {
-  font-size: 1.125rem;
-  color: #ffffff;
-  text-decoration-line: none;
 }
 
 .menu_toggle_label:hover {
@@ -1913,13 +1914,14 @@ em {
 
 .col_h a {
   color: #f2ce9f;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .col_p {
   color: #ffffff;
+  font-size: 1rem;
 }
 
 .col_a {
