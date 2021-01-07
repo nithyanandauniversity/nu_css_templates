@@ -319,14 +319,19 @@ summary {
 }
 
 @font-face {
+  font-family: RenaultLifeDevanagariBold;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/RenaultLifeDevanagari/RenaultLife-DevanagariBold.ttf);
+}
+
+@font-face {
   font-family: FontAwesome;
   src: url(https://nithyanandauniversity.github.io/fontrepo/FontAwesome/Web/webfonts/fa-light-300.woff2);
 }
 
 :root {
-  --headingfont: RenaultLifeDevanagari;
+  --headingfont: RenaultLifeDevanagariBold;
   --bodyfont: RenaultLifeDevanagari;
-  --headingfontweight: 600;
+  --headingfontweight: 500;
 }
 
 body {
