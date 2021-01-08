@@ -294,6 +294,11 @@ summary {
 }
 
 @font-face {
+  font-family: RenaultLifeDevanagariSemiBold;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/RenaultLifeDevanagari/RenaultLifeDevanagari-DevanagariSemiBold.ttf);
+}
+
+@font-face {
   font-family: OpenSansDevanagari;
   src: url(https://nithyanandauniversity.github.io/fontrepo/OpenSansDevanagari/OpenSans-DevanagariRegular.ttf);
 }
@@ -304,9 +309,9 @@ summary {
 }
 
 :root {
-  --headingfont: RenaultLifeDevanagari;
+  --headingfont: RenaultLifeDevanagariSemiBold;
   --bodyfont: OpenSansDevanagari;
-  --headingfontweight: 600;
+  --headingfontweight: 500;
 }
 
 body {
