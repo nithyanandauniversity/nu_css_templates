@@ -289,43 +289,18 @@ summary {
 }
 
 @font-face {
-  font-family: SignikaDevanagariLight;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagari-DevanagariLight.ttf);
-}
-
-@font-face {
-  font-family: SignikaDevanagariRegular;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/SignikaDevanagari/SignikaDevanagariRegular-DevanagariRegular.ttf);
-}
-
-@font-face {
-  font-family: PFBeauSansProDevanagariRegular;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/PFBeauSansProDevanagari/PFBeauSansPro-DevanagariRegular.ttf);
-}
-
-@font-face {
-  font-family: PFBeauSansProDevanagariSemiBold;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/PFBeauSansProDevanagari/PFBeauSansPro-DevanagariSemiBold.ttf);
-}
-
-@font-face {
-  font-family: FordAntenna-DevanagariRegular;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/FordAntennaDevanagari/FordAntenna-DevanagariRegular.ttf);
-}
-
-@font-face {
   font-family: RenaultLifeDevanagari;
   src: url(https://nithyanandauniversity.github.io/fontrepo/RenaultLifeDevanagari/RenaultLifeDevanagari.ttf);
 }
 
 @font-face {
-  font-family: RenaultLifeDevanagariBold;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/RenaultLifeDevanagari/RenaultLife-DevanagariBold.ttf);
+  font-family: RenaultLifeDevanagariSemiBold;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/RenaultLifeDevanagari/RenaultLifeDevanagari-DevanagariSemiBold.ttf);
 }
 
 @font-face {
-  font-family: MarineRegularDevanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/MarineRegularDevanagari/MarineRegular-Regular-Devanagari.ttf);
+  font-family: OpenSansDevanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/OpenSansDevanagari/OpenSans-DevanagariRegular.ttf);
 }
 
 @font-face {
@@ -334,9 +309,9 @@ summary {
 }
 
 :root {
-  --headingfont: MarineRegularDevanagari;
-  --bodyfont: MarineRegularDevanagari;
-  --headingfontweight: 600;
+  --headingfont: RenaultLifeDevanagariSemiBold;
+  --bodyfont: OpenSansDevanagari;
+  --headingfontweight: 500;
 }
 
 body {
@@ -444,7 +419,7 @@ img {
 
 em {
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   font-family: var(--headingfont);
 }
 
@@ -1522,22 +1497,6 @@ em {
   padding-right: 0.5rem;
 }
 
-@media all and (max-width: 48em) {
-  html {
-    font-size: 14px;
-  }
-  .nu_page_title_container {
-    margin: 0;
-    width: 100%;
-  }
-  .nu_page_title_row {
-    width: 85%;
-  }
-  .nu_hero_banner {
-    height: 35vh;
-  }
-}
-
 @media all and (min-width: 75em) {
   html {
     font-size: 18px;
@@ -1566,6 +1525,14 @@ em {
   padding: 0;
 }
 
+.menu_link_a,
+.menu_toggle_label {
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1.25rem;
+}
+
 .menu_link_li {
   margin: 0;
   padding: 0;
@@ -1574,7 +1541,8 @@ em {
 .menu_link_a {
   position: relative;
   display: block;
-  padding: 1.5rem;
+  color: #ffffff;
+  text-decoration-line: none;
 }
 
 .menu_mega {
@@ -1690,8 +1658,9 @@ em {
 }
 
 .menu_toggle_label {
-  padding: 1.5rem;
   display: block;
+  color: #ffffff;
+  text-decoration-line: none;
 }
 
 .menu_hover_a:after {
@@ -1712,12 +1681,29 @@ em {
   width: 100%;
 }
 
+@media all and (max-width: 48em) {
+  html {
+    font-size: 14px;
+  }
+  .nu_page_title_container {
+    margin: 0;
+    width: 100%;
+  }
+  .nu_page_title_row {
+    width: 85%;
+  }
+  .nu_hero_banner {
+    height: 35vh;
+  }
+}
+
 .nu_footer {
   display: block;
   position: relative;
   z-index: 10;
   background: #400404;
-  padding: 15px 0;
+  padding: 15px 5%;
+  margin: auto;
 }
 
 .container {
@@ -1801,6 +1787,33 @@ em {
   margin: 0px;
   padding-left: 0.5rem;
   font-family: var(--headingfont);
+  font-weight: 600;
+}
+
+@media all and (max-width: 48em) {
+  .menu_logo_div {
+    flex-flow: column nowrap;
+    background: #400404;
+    padding: 0.8rem;
+    position: absolute;
+    overflow-y: visible;
+    margin-right: auto;
+    margin-left: 0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  .menu_logo_a {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  .menu_group_ul {
+    padding-left: 4rem;
+    margin-left: auto;
+  }
+  .menu_link_a,
+  .menu_toggle_label {
+    padding: 1rem;
+  }
 }
 
 .menu_logo_img {
@@ -1808,22 +1821,10 @@ em {
   /*margin-top : auto; margin-bottom : auto;*/
 }
 
-.menu_link_a {
-  font-size: 1.125rem;
-  color: #ffffff;
-  text-decoration-line: none;
-}
-
 .menu_link_a:hover {
   color: #d1af83;
   cursor: pointer;
   transition: 0.8s;
-}
-
-.menu_toggle_label {
-  font-size: 1.125rem;
-  color: #ffffff;
-  text-decoration-line: none;
 }
 
 .menu_toggle_label:hover {
@@ -1889,13 +1890,14 @@ em {
 
 .col_h a {
   color: #f2ce9f;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .col_p {
   color: #ffffff;
+  font-size: 0.88rem;
 }
 
 .col_a {
@@ -1903,7 +1905,7 @@ em {
   color: #ffffff;
   transition: 0.3s ease;
   text-decoration: none;
-  margin-top: 10px;
+  font-size: 0.88rem;
 }
 
 .col_a:after {
@@ -2210,6 +2212,7 @@ img.hover-zoom:hover {
 
 .lead {
   font-family: var(--headingfont);
+  font-weight: 600;
   font-size: 1.5rem;
   color: #d1af83;
   line-height: 1.3em;
@@ -2219,6 +2222,7 @@ img.hover-zoom:hover {
 footer .lead {
   font-size: 1rem;
   margin: 0;
+  font-family: var(--bodyfont);
 }
 
 footer p {
@@ -2233,6 +2237,7 @@ footer p {
   text-align: justify;
 }
 
+/*
 table {
   font-family: Tahoma;
   font-size: 0.88rem;
@@ -2257,6 +2262,7 @@ table td {
     border-right: 1px solid #d1af8350;
   }
 }
+*/
 
 .hs_std_def_content {
   text-align: justify;
