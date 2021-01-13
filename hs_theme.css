@@ -89,3 +89,12 @@ ul.refine > li {
 option.style1{
     font-family: SignikaDevanagariRegular;
 }
+
+.common_question {
+    text-transform: capitalize;
+    padding : 1.2rem;
+}
+
+.common_answer {
+    padding : 1.2rem;
+}
