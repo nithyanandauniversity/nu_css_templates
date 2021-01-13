@@ -91,10 +91,19 @@ option.style1{
 }
 
 .common_question {
-    text-transform: capitalize;
-    padding : 1.2rem;
+    text-transform: uppercase;
+    padding: 1.2rem;
 }
 
 .common_answer {
     padding : 1.2rem;
+    text-align: justify;
+}
+
+ul.common_answer {
+    list-style: disc;
+}
+
+ul.common_answer > li{
+    padding : 1rem;
 }
