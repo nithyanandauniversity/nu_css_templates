@@ -107,3 +107,11 @@ ul.common_answer {
 ul.common_answer > li{
     padding : 0.35rem;
 }
+
+.quantity {
+    font-size: 4.5rem;
+}
+
+.quantity.units{
+    font-size: 50%;
+}
