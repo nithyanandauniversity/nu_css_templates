@@ -304,12 +304,22 @@ summary {
 }
 
 @font-face {
+  font-family: AdobeDevanagari;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/AdobeDevanagari/AdobeClean-Regular-Devanagari.ttf);
+}
+
+@font-face {
+  font-family: AdobeDevanagariSemiBold;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/AdobeDevanagari/AdobeCleanDevanagari-DevanagariSemiBold.ttf);
+}
+
+@font-face {
   font-family: FontAwesome;
   src: url(https://nithyanandauniversity.github.io/fontrepo/FontAwesome/Web/webfonts/fa-light-300.woff2);
 }
 
 :root {
-  --headingfont: RenaultLifeDevanagariSemiBold;
+  --headingfont: AdobeDevanagariSemiBold;
   --bodyfont: OpenSansDevanagari;
   --headingfontweight: 500;
 }
