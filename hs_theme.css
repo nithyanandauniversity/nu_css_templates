@@ -134,5 +134,10 @@ ul.common_answer > li{
 }
 
 .transliteration_iast{
-   font-family: OpenSans;
+   font-family: Arial;
+   text-align: center;
+}
+
+.samskrta_sutra {
+    text-align: center;
 }
