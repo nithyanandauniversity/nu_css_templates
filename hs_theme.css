@@ -132,3 +132,7 @@ ul.common_answer > li{
     max-width : 100%; 
     width : calc((400px - 100%) * 1000); 
 }
+
+.transliteration_iast{
+   font-family: OpenSans;
+}
