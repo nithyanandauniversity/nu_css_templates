@@ -304,13 +304,23 @@ summary {
 }
 
 @font-face {
+  font-family: AnodinaDevanagariBold;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/AnodinaDevanagari/Anodina-Devanagari-Bold.ttf);
+}
+
+@font-face {
+  font-family: AnodinaDevanagariRegular;
+  src: url(https://nithyanandauniversity.github.io/fontrepo/AnodinaDevanagari/Anodina-Devanagari-Regular.ttf);
+}
+
+@font-face {
   font-family: FontAwesome;
   src: url(https://nithyanandauniversity.github.io/fontrepo/FontAwesome/Web/webfonts/fa-light-300.woff2);
 }
 
 :root {
-  --headingfont: JostDevanagariMedium;
-  --bodyfont: JostDevanagariRegular;
+  --headingfont: AnodinaDevanagariBold;
+  --bodyfont: AnodinaDevanagariRegular;
   --headingfontweight: 500;
 }
 
