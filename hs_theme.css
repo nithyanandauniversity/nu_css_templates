@@ -196,10 +196,10 @@ ul.common_answer > li{
 	height: 9px;
 }
 .cbaccordian__arrow:before {
-	transform: translate(-2px, 0) rotate(45deg);
+	transform: translate(-1px, 0) rotate(45deg);
 }
 .cbaccordian__arrow:after {
-	transform: translate(2px, 0) rotate(-45deg);
+	transform: translate(1px, 0) rotate(-45deg);
 }
 .cbaccordian {
 	position: absolute;
@@ -216,10 +216,10 @@ ul.common_answer > li{
 	transform: translate(0, 50%);
 }
 .cbaccordian:checked ~ .cbaccordian__arrow:before {
-	transform: translate(2px, 0) rotate(45deg);
+	transform: translate(3.6px, 0) rotate(45deg);
 }
 .cbaccordian:checked ~ .cbaccordian__arrow:after {
-	transform: translate(-2px, 0) rotate(-45deg);
+	transform: translate(-3.6px, 0) rotate(-45deg);
 }
 @keyframes flipdown {
 	0% {
