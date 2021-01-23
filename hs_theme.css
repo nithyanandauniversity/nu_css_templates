@@ -181,6 +181,7 @@ ul.common_answer > li{
 	padding-bottom: 0;
 }
 .cbaccordian__arrow {
+	font-family : sans-serif;
 	position: absolute;
 	transform: translate(-6px, 0);
 	margin-top: 16px;
