@@ -96,7 +96,7 @@ option.style1{
 }
 
 .common_answer {
-    padding : 1.2rem;
+    /*padding : 1.2rem;*/
     text-align: justify;
 }
 
@@ -140,4 +140,106 @@ ul.common_answer > li{
 
 .samskrta_sutra {
     text-align: center;
+}
+
+.cbaccordian__arrow:before, .cbaccordian__arrow:after, .cbaccordian__block {
+	transition: all 0.25s ease-in-out;
+}
+.common_questions h3 {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/*html { overflow-y: scroll; }*/ 
+.cbaccordian__block {
+	/*color: rgba(48, 69, 92, 0.8);
+	font-size: 17px;
+	line-height: 26px;
+	letter-spacing: 1px;*/
+	position: relative;
+	overflow: hidden;
+	max-height: 800px;
+	opacity: 1;
+	transform: translate(0, 0);
+	/*margin-top: 14px;*/
+	z-index: 2;
+}
+.common_questions li:nth-of-type(1) {
+	animation-delay: 0.5s;
+}
+.common_questions li:nth-of-type(2) {
+	animation-delay: 0.75s;
+}
+.common_questions li:nth-of-type(3) {
+	animation-delay: 1s;
+}
+.common_questions li:last-of-type {
+	padding-bottom: 0;
+}
+.cbaccordian__arrow {
+	position: absolute;
+	transform: translate(-6px, 0);
+	margin-top: 16px;
+	right: 0;
+	display : inline;
+}
+.cbaccordian__arrow:before, .cbaccordian__arrow:after {
+	content: "";
+	position: absolute;
+	background-color: #5e2121; /*#ff6873;*/
+	width: 3px;
+	height: 9px;
+}
+.cbaccordian__arrow:before {
+	transform: translate(-2px, 0) rotate(45deg);
+}
+.cbaccordian__arrow:after {
+	transform: translate(2px, 0) rotate(-45deg);
+}
+.cbaccordian {
+	position: absolute;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+}
+.cbaccordian:checked ~ .cbaccordian__block {
+	margin-top: 0;
+	max-height: 0;
+	opacity: 0;
+	transform: translate(0, 50%);
+}
+.cbaccordian:checked ~ .cbaccordian__arrow:before {
+	transform: translate(2px, 0) rotate(45deg);
+}
+.cbaccordian:checked ~ .cbaccordian__arrow:after {
+	transform: translate(-2px, 0) rotate(-45deg);
+}
+@keyframes flipdown {
+	0% {
+		opacity: 0;
+		transform-origin: top center;
+		transform: rotateX(-90deg);
+	}
+	5% {
+		opacity: 1;
+	}
+	80% {
+		transform: rotateX(8deg);
+	}
+	83% {
+		transform: rotateX(6deg);
+	}
+	92% {
+		transform: rotateX(-3deg);
+	}
+	100% {
+		transform-origin: top center;
+		transform: rotateX(0deg);
+	}
 }
