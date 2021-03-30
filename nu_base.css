@@ -55,8 +55,8 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 
 body {
   font-family: system-ui, -apple-system,
-    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 /*
@@ -105,7 +105,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
     monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
@@ -190,9 +190,9 @@ Correct the inability to style clickable types in iOS and Safari.
 */
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -252,7 +252,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -289,28 +289,27 @@ summary {
 }
 
 @font-face {
-  font-family: OpenSansDevanagari;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/OpenSansDevanagari/OpenSans-DevanagariRegular.ttf);
+  font-family: 'UpgradeDevanagari';
+  src: url('https://nithyanandauniversity.github.io/fontrepo/UpgradeDevanagari/Upgrade-Devanagari-Regular.woff2')
+      format('woff2'),
+    /* Modern Browsers */
+      url('https://nithyanandauniversity.github.io/fontrepo/UpgradeDevanagari/Upgrade-Devanagari-Regular.otf')
+      format('opentype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
 }
 
 @font-face {
-  font-family: JostDevanagariRegular;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/JostDevanagari/Jost-Regular-Devanagari.ttf);
-}
-
-@font-face {
-  font-family: JostDevanagariMedium;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/JostDevanagari/Jost-Medium-Devanagari.ttf);
-}
-
-@font-face {
-  font-family: AnodinaDevanagariBold;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/AnodinaDevanagari/Anodina-Devanagari-Bold.ttf);
-}
-
-@font-face {
-  font-family: AnodinaDevanagariRegular;
-  src: url(https://nithyanandauniversity.github.io/fontrepo/AnodinaDevanagari/AnodinaDevanagariRegular.ttf);
+  font-family: 'UpgradeDevanagariMedium';
+  src: url('https://nithyanandauniversity.github.io/fontrepo/UpgradeDevanagari/Upgrade-Devanagari-Medium.woff2')
+      format('woff2'),
+    /* Modern Browsers */
+      url('https://nithyanandauniversity.github.io/fontrepo/UpgradeDevanagari/Upgrade-Devanagari-Medium.otf')
+      format('opentype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -319,8 +318,8 @@ summary {
 }
 
 :root {
-  --headingfont: AnodinaDevanagariBold;
-  --bodyfont: AnodinaDevanagariRegular;
+  --headingfont: UpgradeDevanagariMedium;
+  --bodyfont: UpgradeDevanagari;
   --headingfontweight: 500;
 }
 
@@ -1575,7 +1574,7 @@ em {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-family: FontAwesome;
-  content: "\00A0\f107";
+  content: '\00A0\f107';
   font-weight: 800;
   transform: translateY(1px);
   transition: 0.5s ease;
@@ -1592,7 +1591,7 @@ em {
   border: 0;
   cursor: pointer;
   font-family: FontAwesome;
-  content: "\f00d";
+  content: '\f00d';
   transition: 0.3s ease;
   position: absolute;
   top: 1em;
@@ -1649,7 +1648,7 @@ em {
 }
 
 .menu_hover_a:after {
-  content: "\25BC";
+  content: '\25BC';
   font-size: 0.6rem;
   margin-left: 0.3rem;
 }
@@ -1849,7 +1848,7 @@ em {
 .menu_logo_a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   left: 50%;
@@ -1895,7 +1894,7 @@ em {
 .col_a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   left: 50%;
@@ -2030,7 +2029,7 @@ blockquote p {
 }
 
 blockquote::before {
-  content: "\201D" !important;
+  content: '\201D' !important;
   font-family: sans-serif;
   font-size: 120px;
   color: rgba(51, 51, 51, 0.25);
@@ -2120,12 +2119,12 @@ blockquote::before {
 }
 
 .nu_blockquote > figcaption > cite > time {
-  content: "\n";
+  content: '\n';
   font-weight: bold;
 }
 
 .nu_blockquote > figcaption > cite > time:before {
-  content: "\a";
+  content: '\a';
   display: block;
 }
 
