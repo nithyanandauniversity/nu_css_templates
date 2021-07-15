@@ -1406,6 +1406,7 @@ em {
 .nu_hero_image {
   max-width: 1080px;
   margin: 0;
+  padding-bottom: 20px;
 }
 
 .nu_page_title_container {
