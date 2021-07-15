@@ -1801,6 +1801,7 @@ em {
 
 .menu_logo_img {
   max-width: 35px;
+  width: 80%;
   /*margin-top : auto; margin-bottom : auto;*/
 }
 
